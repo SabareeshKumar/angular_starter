@@ -1,0 +1,6 @@
+@Component(
+	selector: 'my-hero',
+	directives: ['coreDirectives', 'formDirectives'],
+)
+class HeroComponent {
+}

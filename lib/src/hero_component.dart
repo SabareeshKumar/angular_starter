@@ -13,7 +13,6 @@ import 'route_paths.dart';
   directives: [coreDirectives, formDirectives],
 )
 class HeroComponent implements OnActivate{
-  @Input()  
   Hero hero;
   final HeroService _heroService;
   final Location _location;
@@ -27,5 +26,10 @@ class HeroComponent implements OnActivate{
   }
 
   void goBack() => _location.back();
+
+  void save() async {
+       await _heroService.update(hero);
+       goBack();
+  }
 }
 	

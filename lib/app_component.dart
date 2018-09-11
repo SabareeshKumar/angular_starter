@@ -18,8 +18,7 @@ import 'src/hero_service.dart';
   styleUrls: ['app_component.css'],
   directives: [routerDirectives],
   exports: [Routes, RoutePaths],
-  providers: [ClassProvider(HeroService)],
-  
+  providers: [ClassProvider(HeroService)],  
 )
 class AppComponent {
   final title = 'Tour of Heroes';
